@@ -1,5 +1,6 @@
 package com.masomohub;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -13,6 +14,8 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Toast;
 
+import com.crashlytics.android.Crashlytics;
+import com.crashlytics.android.answers.Answers;
 import com.digits.sdk.android.AuthCallback;
 import com.digits.sdk.android.Digits;
 import com.digits.sdk.android.DigitsAuthButton;
@@ -52,7 +55,7 @@ public class Login extends AppCompatActivity {
 
 
         Digits.Builder digitsBuilder = new Digits.Builder().withTheme(R.style.CustomDigitsTheme);
-        Fabric.with(this, new TwitterCore(authConfig), digitsBuilder.build());
+        Fabric.with(this, new TwitterCore(authConfig), digitsBuilder.build(), new Answers(), new Crashlytics());
 
         DigitsAuthButton digitsButton = (DigitsAuthButton) findViewById(R.id.auth_button);
         digitsButton.setAuthTheme(android.R.style.Theme_Material);
@@ -62,6 +65,8 @@ public class Login extends AppCompatActivity {
                 // TODO: associate the session userID with your user model
                 Toast.makeText(getApplicationContext(), "Authentication successful for "
                         + phoneNumber, Toast.LENGTH_LONG).show();
+
+
             }
 
             @Override

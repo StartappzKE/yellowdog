@@ -24,7 +24,7 @@
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="d74dc869e43d009460f0e43166c1dc58fe7f6f54" />
+            android:value="87e979a4a47b40527aa977dc9b1c0244bf561160" />
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

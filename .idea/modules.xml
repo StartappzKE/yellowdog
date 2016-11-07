@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MasomoHub.iml" filepath="$PROJECT_DIR$/MasomoHub.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yellowdog.iml" filepath="$PROJECT_DIR$/yellowdog.iml" />
     </modules>
   </component>
 </project>
