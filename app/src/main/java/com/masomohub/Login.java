@@ -1,5 +1,6 @@
 package com.masomohub;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
@@ -29,7 +30,7 @@ public class Login extends AppCompatActivity {
     // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
     private static final String TWITTER_KEY = "6KT4W3PRkxSCJngYdVWj4udIX";
     private static final String TWITTER_SECRET = "ACSvm74Lxj63K35OrqM9hqz8Qwc0gMnaSiBeXZ6WznMk4JCcwl";
-
+    final Context context = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,6 +69,10 @@ public class Login extends AppCompatActivity {
                 startActivity(new Intent(Login.this, MainActivity.class));
                 Toast.makeText(getApplicationContext(), "Authentication successful for "
                         + phoneNumber, Toast.LENGTH_LONG).show();
+
+                 Intent intent = new Intent (context, MainActivity.class);
+                 startActivity(intent);
+
 
 
             }
