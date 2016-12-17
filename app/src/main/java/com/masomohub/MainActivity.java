@@ -31,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<NotesModel> data;
     private NotesAdapter adapter;
 
+    public static final String MESSAGE_PROGRESS = "message_progress";
+    private static final int PERMISSION_REQUEST_CODE = 1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
