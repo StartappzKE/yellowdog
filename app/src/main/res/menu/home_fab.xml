@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_item_tag"
+        android:icon="@drawable/ic_price_tag"
+        android:title="@string/menu_item_tag" />
+    <item
+        android:id="@+id/action_item_upload"
+        android:icon="@drawable/ic_upload"
+        android:title="@string/menu_item_upload"/>
+    <item
+        android:id="@+id/action_item_files"
+        android:icon="@drawable/ic_folder"
+        android:title="@string/menu_item_files" />
+
+</menu>

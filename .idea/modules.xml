@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MasomoHub.iml" filepath="$PROJECT_DIR$/MasomoHub.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MHub.iml" filepath="$PROJECT_DIR$/MHub.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
